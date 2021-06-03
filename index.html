@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <form class="w-50 mx-auto mt-5">
+                    <input class="form-control" type="text" placeholder="Nhập số cần đoán" required>
+                    <p class="text-danger my-0" style="display: none;">Số nhập vào lớn hơn số cần tìm</p>
+                    <p class="text-danger my-0" style="display: none;">Số nhập vào nhỏ hơn số cần tìm</p>
+                    <p class="text-success my-0" style="display: none;">Chúc mừng bạn đã đoán đúng</p>
+                    <button class="mt-2 btn btn-primary">Đoán</button>
+                </form>
+            </div>
+            <div class="col-4 mt-5">
+                <h2>Lịch sử đoán</h2>
+                <div id='history'>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
